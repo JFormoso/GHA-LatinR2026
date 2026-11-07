@@ -1,0 +1,6 @@
+renv/library/
+.Rproj.user
+.Rhistory
+.RData
+_site/
+/.quarto/
