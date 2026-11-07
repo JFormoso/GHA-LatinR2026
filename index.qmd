@@ -5,11 +5,10 @@ execute:
 toc: true
 ---
 
-📅 **Fecha:** 1 de diciembre, 2025
+📅 **Fecha:** Miércoles 11 de noviembre
 
-🕕 **Horario:** 10 am (UTC -3 Hora Buenos Aires)
+🕕 **Horario:** 8:30 a 12:00 (UTC -5, Hora Colombia)
 
-[**Inscripción aquí**](https://www.eventbrite.cl/e/automatiza-la-publicacion-de-tus-reportes-con-quarto-y-github-actions-tickets-1967685428084)
 
 ## Materiales para el ejercicio práctico
 
@@ -19,7 +18,7 @@ toc: true
 
 [Repositorio](https://github.com/JFormoso/censo-meriendas)
 
-[Archivo "_publish.yml"](https://github.com/JFormoso/quarto-GHA/blob/main/ejemplo.yml)
+[Archivo "_publish.yml"](https://github.com/JFormoso/GHA-LatinR2026/blob/main/ejemplo.yml)
 
 ## 🎯 Objetivo del taller
 
@@ -34,21 +33,21 @@ El objetivo del taller es aprender a automatizar la actualización y publicació
 
 Durante este taller, vas a aprender a:
 
--   Qué es una GitHub Action.
+- Qué es una GitHub Action.
 
--   Cómo usar GitHub Actions para ejecutar código en R y Quarto.
+- Cómo usar GitHub Actions para ejecutar código en R y Quarto.
 
--   Cómo utilizar Github Actions para publicar un producto de Quarto a Github Pages.
+- Cómo utilizar Github Actions para publicar un producto de Quarto a Github Pages.
 
--   Cómo configurar un workflow para que, con cada push o pull request, se actualice y publique automáticamente un reporte o dashboard.
+- Cómo configurar un workflow para que, con cada push o pull request, se actualice y publique automáticamente un reporte o dashboard.
 
--   Cómo programar un workflow para que se ejecute automáticamente en intervalos regulares
+- Cómo programar un workflow para que se ejecute automáticamente en intervalos regulares
 
 ## 🧰 Requisitos técnicos
 
-Es muy importante que tengas el entorno configurado antes del taller para poder seguirlo sin inconvenientes. Si tenés dudas, escribinos a [jesica.formoso\@gmail.com](mailto:jesica.formoso@gmail.com) o [mcnanton\@gmail.com](mailto:mcnanton@gmail.com).
+Es muy importante que tengas el entorno configurado antes del taller para poder seguirlo sin inconvenientes. Si tenés dudas, escribinos a [jesica.formoso@gmail.com](mailto:jesica.formoso@gmail.com) o [mcnanton@gmail.com](mailto:mcnanton@gmail.com).
 
-1.  **R (versión 4.5.1)**
+1.  **R (versión 4.6.2)**
 
 Para actualizar R:
 
@@ -60,13 +59,13 @@ updateR()
 
 ```
 
-2.  **Quarto (versión 1.7)**
+2.  **Quarto (versión 1.10.18)**
 
 Descargá e instalá Quarto CLI desde:
 
 👉 <https://quarto.org/docs/download/>
 
-3.  **RStudio (versión 2025.05.1)** 
+3.  **RStudio (versión 2026.10.1)**
 
 Descargá e instalá la última versión desde:
 
@@ -102,23 +101,21 @@ Si todavía no tenés una, creá tu cuenta [aquí](https://github.com/).
 
 Podés descargarlo e instalarlo desde [esta página](https://git-scm.com/downloads).
 
-6. **Clonar el repositorio censo-meriendas**
+6.  **Clonar el repositorio censo-meriendas**
 
 Elegí uno de estos métodos y asegurate de tener el repo en tu compu al momento del taller:
 
 - Opción 1: Clonar con Git
 
-```bash
+``` bash
 
 git clone https://github.com/JFormoso/censo-meriendas
 cd censo-meriendas
-
 ```
 
 - Opción 2: Descargar ZIP (si no usás Git)
 
-Ingresá al repositorio en https://github.com/JFormoso/censo-meriendas y en el botón verde **Code** seleccioná **Download ZIP**.
-Luego, descomprimí la carpeta en tu equipo.
+Ingresá al repositorio en https://github.com/JFormoso/censo-meriendas y en el botón verde **Code** seleccioná **Download ZIP**. Luego, descomprimí la carpeta en tu equipo.
 
 7.  **Paquetes de R necesarios**
 
@@ -132,7 +129,7 @@ install.packages("renv")
 renv::restore()      
 ```
 
-- Opción 2 — Sin renv 
+- Opción 2 — Sin renv
 
 Instalá todos los paquetes que usamos para el proyecto de forma manual con **install.packages()**.
 
@@ -141,12 +138,9 @@ install.packages(c("tidyverse","lubridate","janitor","gt","forcats","tidytext","
 
 ```
 
-
 ## Quiénes somos
 
-
-### **Jesica Formoso** 
-
+### **Jesica Formoso**
 
 #### 👩‍🎓 Formación y trayectoria
 
@@ -172,7 +166,7 @@ Coordino un equipo de ciencia de datos de 20 personas en la Gerencia de Informac
 
 #### 🌍 Comunidades y ciencia abierta
 
-Organizadora en [R-Ladies Buenos Aires](https://rladiesba.netlify.app/), una comunidad que impulsa la diversidad en ciencia de datos y programación en R. También soy parte del equipo global de R-Ladies. 
+Organizadora en [R-Ladies Buenos Aires](https://rladiesba.netlify.app/), una comunidad que impulsa la diversidad en ciencia de datos y programación en R. También soy parte del equipo global de R-Ladies.
 
 ## 🤝 Código de conducta
 

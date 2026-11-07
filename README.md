@@ -1,8 +1,8 @@
 # Automatizar la publicación de reportes con Quarto y Github Actions
 
-📅 **Fecha:** 1 de Diciembre, 2025
+📅 **Fecha:** Miércoles 11 de noviembre
 
-🕕 **Horario:** 10 am (UTC -3, Hora Buenos Aires)
+🕕 **Horario:** 8:30 a 12:00 (UTC -5, Hora Colombia)
 
 ## 🎯 Objetivo del taller
 
@@ -17,14 +17,14 @@ El objetivo del taller es aprender a automatizar la actualización y publicació
 
 Durante este taller, vas a aprender a:
 
--   Qué es una GitHub Action.
+- Qué es una GitHub Action.
 
--   Cómo usar GitHub Actions para ejecutar código en R y Quarto.
+- Cómo usar GitHub Actions para ejecutar código en R y Quarto.
 
--   Cómo utilizar Github Actions para publicar un producto de Quarto a Github Pages.
+- Cómo utilizar Github Actions para publicar un producto de Quarto a Github Pages.
 
--   Cómo configurar un workflow para que, con cada push o pull request, se actualice y publique automáticamente un reporte o dashboard.
+- Cómo configurar un workflow para que, con cada push o pull request, se actualice y publique automáticamente un reporte o dashboard.
 
--   Cómo programar un workflow para que se ejecute automáticamente en intervalos regulares.
+- Cómo programar un workflow para que se ejecute automáticamente en intervalos regulares.
 
-Encontrá más información en la [página del taller](jformoso.github.io/quarto-GHA/).
+Encontrá más información en la [página del taller](jformoso.github.io/GHA-LatinR2026/).
