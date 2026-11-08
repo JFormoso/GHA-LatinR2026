@@ -60,21 +60,28 @@
     "href": "slides.html#hola",
     "title": "Automatiza la publicación de tus reportes",
     "section": "¡Hola!👋",
-    "text": "¡Hola!👋\n\n\n\n\n\nMaría Cristina Nanton Coordinación en Ciencia de Datos en Gerencia de Información y Estadísticas en Salud (GCBA) AI Dev en The Global Health Network  R-Ladies Buenos Aires💜 Colaboradora en MetaDocencia🍎\n\n\n\n\n\n\nJesica Formoso Investigadora Adjunta, CIIPME-CONICET   Medición de Impacto en Metadocencia🍎 R-Ladies Buenos Aires 💜"
+    "text": "¡Hola!👋\n\n\n\n\n\nMaría Cristina Nanton Ciencia de Datos en Gerencia de Información y Estadísticas en Salud (GCBA) AI Dev en TGHN  R-Ladies Buenos Aires💜 MetaDocencia🍎\n\n\n\n\n\n\nJesica Formoso Investigadora Adjunta, CIIPME-CONICET   Medición de Impacto en Metadocencia🍎 R-Ladies Buenos Aires 💜"
   },
   {
     "objectID": "slides.html#qué-vamos-a-ver-hoy",
     "href": "slides.html#qué-vamos-a-ver-hoy",
     "title": "Automatiza la publicación de tus reportes",
     "section": "Qué vamos a ver hoy",
-    "text": "Qué vamos a ver hoy\nAgenda\n\nConceptos básicos para trabajar con GitHub Actions, GH Pages y Quarto\nPreparación de un entorno de trabajo para flujos bien automatizados\nCreación de un flujo automatizado de publicación en GH Pages basado en pushes a un repositorio\nAdaptación a ejecuciones periódicas"
+    "text": "Qué vamos a ver hoy\nAgenda\n\nConceptos básicos para trabajar con GitHub Actions, GH Pages y Quarto\nPreparación de un entorno de trabajo para flujos automatizados\nCreación de un flujo automatizado de publicación en GH Pages basado en pushes a un repositorio\nAdaptación a ejecuciones periódicas\nMateriales: https://jformoso.github.io/GHA-LatinR2026/"
   },
   {
-    "objectID": "slides.html#qué-vamos-a-implementar-hoy",
-    "href": "slides.html#qué-vamos-a-implementar-hoy",
+    "objectID": "slides.html#qué-vamos-a-implementar",
+    "href": "slides.html#qué-vamos-a-implementar",
     "title": "Automatiza la publicación de tus reportes",
-    "section": "Qué vamos a implementar hoy",
-    "text": "Qué vamos a implementar hoy\nUn sitio publicado en GH Pages generado desde Quarto alimentado de manera periódica y automatizada a partir de respuestas a un formulario con orquestación via GH Actions"
+    "section": "Qué vamos a implementar",
+    "text": "Qué vamos a implementar\nUn sitio publicado en GH Pages generado desde Quarto alimentado de manera periódica y automatizada a partir de respuestas a un formulario con orquestación via GH Actions"
+  },
+  {
+    "objectID": "slides.html#cuánta-experiencia-tenés-con-github",
+    "href": "slides.html#cuánta-experiencia-tenés-con-github",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "¿Cuánta experiencia tenés con GitHub?",
+    "text": "¿Cuánta experiencia tenés con GitHub?\n\n\nNunca lo usé\nTengo cuenta, pero casi no la uso\nLo uso para guardar mis proyectos (commit, push, pull)\nColaboro con otras personas (ramas, pull requests, forks)\nYa usé GitHub Actions o GitHub Pages"
   },
   {
     "objectID": "slides.html#github-y-github-actions",
@@ -175,25 +182,25 @@
     "text": "Ahora sí: la infraestructura de nuestra automatización"
   },
   {
-    "objectID": "slides.html#mini-evaluación-1-1",
-    "href": "slides.html#mini-evaluación-1-1",
+    "objectID": "slides.html#mini-evaluación-1---pregunta-1",
+    "href": "slides.html#mini-evaluación-1---pregunta-1",
     "title": "Automatiza la publicación de tus reportes",
-    "section": "Mini-evaluación 1:",
-    "text": "Mini-evaluación 1:\n¿Qué herramiena permite controlar los paquetes necesarios para reproducir el proyecto en GitHub Actions?\n👍 Quarto\n😮 renv\n👏 GitHub"
+    "section": "Mini-evaluación 1 - Pregunta 1",
+    "text": "Mini-evaluación 1 - Pregunta 1\n\n\n¿Qué herramienta permite controlar los paquetes necesarios para reproducir el proyecto en GitHub Actions?\n\n\nQuarto\nrenv\nGitHub"
   },
   {
-    "objectID": "slides.html#mini-evaluación-1-2",
-    "href": "slides.html#mini-evaluación-1-2",
+    "objectID": "slides.html#mini-evaluación-1---pregunta-2",
+    "href": "slides.html#mini-evaluación-1---pregunta-2",
     "title": "Automatiza la publicación de tus reportes",
-    "section": "Mini-evaluación 1:",
-    "text": "Mini-evaluación 1:\n¿Qué formato utilizan los archivos de configuración de las GitHub Actions?\n👍 YAML\n😮 .workflow\n👏 cron"
+    "section": "Mini-evaluación 1 - Pregunta 2",
+    "text": "Mini-evaluación 1 - Pregunta 2\n\n\n¿Qué formato utilizan los archivos de configuración de las GitHub Actions?\n\n\nYAML\n.workflow\ncron"
   },
   {
-    "objectID": "slides.html#mini-evaluación-1-3",
-    "href": "slides.html#mini-evaluación-1-3",
+    "objectID": "slides.html#mini-evaluación-1---pregunta-3",
+    "href": "slides.html#mini-evaluación-1---pregunta-3",
     "title": "Automatiza la publicación de tus reportes",
-    "section": "Mini-evaluación 1:",
-    "text": "Mini-evaluación 1:\n¿Cuál es el sistema operativo de la máquina que ejecutará las Github Actions?\n👍 El de la computadora en la que se redactó el código\n😮 El que elija GitHub para mi acción\n👏 El de la máquina virtual que configure yo"
+    "section": "Mini-evaluación 1 - Pregunta 3",
+    "text": "Mini-evaluación 1 - Pregunta 3\n\n\n¿Cuál es el sistema operativo de la máquina que ejecutará las GitHub Actions?\n\n\nEl de la computadora en la que se redactó el código\nEl que elija GitHub para mi acción\nEl de la máquina virtual que configure yo"
   },
   {
     "objectID": "slides.html#pasos-previos-a-generar-la-github-action",
@@ -294,18 +301,25 @@
     "text": "Repaso de la práctica\n\nCreamos un fork del repositorio censo-meriendas\nCreamos el archivo .github/workflows/_publish.yml\nCreamos la rama “gh-pages” y revisamos el setup en settings/pages\nModificamos los triggers para:\n\nActualizar tras cada push\nActualizar periódicamente\n\nRevisamos el log de un workflow"
   },
   {
-    "objectID": "slides.html#mini-evaluación-2-1",
-    "href": "slides.html#mini-evaluación-2-1",
+    "objectID": "slides.html#mini-evaluación-2---pregunta-1",
+    "href": "slides.html#mini-evaluación-2---pregunta-1",
     "title": "Automatiza la publicación de tus reportes",
-    "section": "Mini-evaluación 2:",
-    "text": "Mini-evaluación 2:\nEn qué parte del YAML se indica cuáles serán los disparadores del workflow?\n👍 jobs:\n😮 steps:\n👏 on:"
+    "section": "Mini-evaluación 2 - Pregunta 1",
+    "text": "Mini-evaluación 2 - Pregunta 1\n\n\nQuerés que una persona sin experiencia en programación pueda actualizar el tablero apretando un botón. ¿Qué disparador agregás?\n\n\npush\nschedule\nworkflow_dispatch\npull_request"
   },
   {
-    "objectID": "slides.html#mini-evaluación-2-2",
-    "href": "slides.html#mini-evaluación-2-2",
+    "objectID": "slides.html#mini-evaluación-2---pregunta-2",
+    "href": "slides.html#mini-evaluación-2---pregunta-2",
     "title": "Automatiza la publicación de tus reportes",
-    "section": "Mini-evaluación 2:",
-    "text": "Mini-evaluación 2:\n¿De qué manera se puede ejecutar código de R dentro de una GHA?\n👍 Dentro de un R script (ejemplo.R) via terminal de la VM\n😮 Dentro de un R script (ejemplo.R) via terminal de R\n🎉 Como un comando R aislado via Rscript -e (install.packages())\n👏 Todas las opciones son correctas"
+    "section": "Mini-evaluación 2 - Pregunta 2",
+    "text": "Mini-evaluación 2 - Pregunta 2\n\n\n¿De qué manera se puede ejecutar código de R dentro de una GitHub Action?\n\n\nDentro de un R script (ejemplo.R) vía la terminal de la máquina virtual\nDentro de un R script (ejemplo.R) vía la terminal de R\nComo un comando de R aislado vía Rscript -e\nTodas las opciones son correctas"
+  },
+  {
+    "objectID": "slides.html#mini-evaluación-2---pregunta-3",
+    "href": "slides.html#mini-evaluación-2---pregunta-3",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "Mini-evaluación 2 - Pregunta 3",
+    "text": "Mini-evaluación 2 - Pregunta 3\n\n\nQuerés que dos tareas se ejecuten en paralelo. ¿Qué tenés que hacer?\n\n\nPonerlas como dos steps dentro del mismo job\nPonerlas en dos jobs distintos, sin needs: entre ellos\nPonerlas en dos jobs distintos y unirlas con needs:\nAgregar parallel: true en cada step"
   },
   {
     "objectID": "slides.html#buenas-prácticas-1",
