@@ -5,7 +5,14 @@ format: clean-revealjs
 embed-resources: true
 html-math-method:
   method: mathjax
-  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+  url: "https://jsdelivr.net"
+filters:
+  - live-questions   
+revealjs-plugins:
+  - live-questions
+live-questions:
+  server: "https://live-questions.jesica-formoso.workers.dev"
+  session: latinr-2026-gha
 author:
   - name: Jesica Formoso
     email: jesica.formoso@gmail.com
@@ -18,6 +25,8 @@ editor:
     wrap: 72
 ---
 
+
+
 ## ¡Hola!👋
 
 ::::::: columns
@@ -27,10 +36,10 @@ editor:
 
 <p style="font-size:0.4em; margin-top:0.5em;">
 
-<strong>María Cristina Nanton</strong><br> Coordinación en Ciencia de
-Datos en Gerencia de Información y Estadísticas en Salud (GCBA)<br><br>
-AI Dev en The Global Health Network <br><br> R-Ladies Buenos
-Aires💜<br><br> Colaboradora<br> en MetaDocencia🍎
+<strong>María Cristina Nanton</strong><br> Ciencia de
+Datos en Gerencia de Información y Estadísticas en Salud (GCBA)<br> AI
+Dev en TGHN <br> R-Ladies Buenos Aires💜<br>
+MetaDocencia🍎
 
 </p>
 :::
@@ -45,7 +54,7 @@ Aires💜<br><br> Colaboradora<br> en MetaDocencia🍎
 <strong>Jesica Formoso</strong><br> Investigadora Adjunta,<br>
 CIIPME-CONICET
 <img src="imagenes/conicet.jpg" alt="Logo CONICET" style="height:1.2em; vertical-align:middle; margin-left:0.3em;"/>
-<br><br> Medición de Impacto en Metadocencia🍎<br><br> R-Ladies Buenos Aires 💜
+<br> Medición de Impacto en Metadocencia🍎<br> R-Ladies Buenos Aires 💜
 
 </p>
 :::
@@ -56,24 +65,35 @@ CIIPME-CONICET
 
 ### Agenda
 
--   Conceptos básicos para trabajar con GitHub Actions, GH Pages y
-    Quarto
+- Conceptos básicos para trabajar con GitHub Actions, GH Pages y Quarto
 
--   Preparación de un entorno de trabajo para flujos *bien*
-    automatizados
+- Preparación de un entorno de trabajo para flujos automatizados
 
--   Creación de un flujo automatizado de publicación en GH Pages basado
-    en pushes a un repositorio
+- Creación de un flujo automatizado de publicación en GH Pages basado en
+  pushes a un repositorio
 
--   Adaptación a ejecuciones periódicas
+- Adaptación a ejecuciones periódicas
 
-## Qué vamos a implementar hoy
+- Materiales: [https://jformoso.github.io/GHA-LatinR2026/](https://jformoso.github.io/GHA-LatinR2026/)
+
+## Qué vamos a implementar
 
 Un sitio publicado en GH Pages generado desde Quarto alimentado de
 manera periódica y automatizada a partir de respuestas a un formulario
 con orquestación via GH Actions
 
 ![](imagenes/flujo1.jpg){fig-align="center"}
+
+## ¿Cuánta experiencia tenés con GitHub?
+
+::: {.poll #exp-github}
+- Nunca lo usé
+- Tengo cuenta, pero casi no la uso
+- Lo uso para guardar mis proyectos (commit, push, pull)
+- Colaboro con otras personas (ramas, pull requests, forks)
+- Ya usé GitHub Actions o GitHub Pages
+:::
+
 
 # CI/CD y GitHub Actions
 
@@ -174,9 +194,9 @@ Las GHA usan sintaxis YAML para organizar las automatizaciones.
 manera automática!
 
 ::: incremental
--   Quarto, por supuesto
--   R para procesar nuestros datos
--   Un repositorio donde este alojado nuestro archivo Qmd
+- Quarto, por supuesto
+- R para procesar nuestros datos
+- Un repositorio donde este alojado nuestro archivo Qmd
 :::
 
 ## ¿Qué vamos a incluir en este YAML?
@@ -184,16 +204,16 @@ manera automática!
 ¡Todo lo que un proyecto de Quarto con R necesita para ejecutarse de
 manera automática!
 
--   Quarto, por supuesto
--   R para procesar nuestros datos
--   Un repositorio donde este alojado nuestro archivo Qmd
+- Quarto, por supuesto
+- R para procesar nuestros datos
+- Un repositorio donde este alojado nuestro archivo Qmd
 
 Y además:
 
 ::: incremental
--   Instrucciones sobre cuándo correr las automatizaciones...
--   ... y una máquina virtual que las ejecute...
--   ... que pueda acceder a las dependencias necesarias e instalarlas!
+- Instrucciones sobre cuándo correr las automatizaciones...
+- ... y una máquina virtual que las ejecute...
+- ... que pueda acceder a las dependencias necesarias e instalarlas!
 :::
 
 ## De nuestra PC a GHA
@@ -293,67 +313,60 @@ contenido de un repositorio
 
 ![](imagenes/flujo3.jpg){fig-align="center"}
 
+
 # Mini-evaluación 1
 
-Vamos a usar las reacciones de zoom para preguntas de opción múltiple
+## Mini-evaluación 1 - Pregunta 1
 
-![](imagenes/reacciones.png){fig-align="center" width="179"}
+::: {.poll #mini1-dependencias results="hidden"}
+¿Qué herramienta permite controlar los paquetes necesarios para reproducir el proyecto en GitHub Actions?
 
-## Mini-evaluación 1:
+- [ ] Quarto
+- [x] renv
+- [ ] GitHub
+:::
 
-### ¿Qué herramiena permite controlar los paquetes necesarios para reproducir el proyecto en GitHub Actions?
+## Mini-evaluación 1 - Pregunta 2
 
-👍 Quarto
+::: {.poll #mini1-formato results="hidden"}
+¿Qué formato utilizan los archivos de configuración de las GitHub Actions?
 
-😮 renv
+- [x] YAML
+- [ ] .workflow
+- [ ] cron
+:::
 
-👏 GitHub
+## Mini-evaluación 1 - Pregunta 3
 
-## Mini-evaluación 1:
+::: {.poll #mini1-sistema results="hidden"}
+¿Cuál es el sistema operativo de la máquina que ejecutará las GitHub Actions?
 
-### ¿Qué formato utilizan los archivos de configuración de las GitHub Actions?
+- [ ] El de la computadora en la que se redactó el código
+- [ ] El que elija GitHub para mi acción
+- [x] El de la máquina virtual que configure yo
+:::
 
-👍 YAML
-
-😮 .workflow
-
-👏 cron
-
-## Mini-evaluación 1:
-
-### ¿Cuál es el sistema operativo de la máquina que ejecutará las Github Actions?
-
-👍 El de la computadora en la que se redactó el código
-
-😮 El que elija GitHub para mi acción
-
-👏 El de la máquina virtual que configure yo
-
-# Break (5 minutos)
+# Break (15 minutos)
 
 # Preparando nuestro entorno
 
 **Recorrido por los elementos del proyecto en el repositorio**
 
-
 ## Pasos previos a generar la GitHub Action
 
 ::: incremental
--   Creamos el form y la hoja de cálculo con acceso a cualquiera vía
-    link
--   Creamos un proyecto de Quarto (website)
-    -   inicializamos git
-    -   inicializamos renv
--   Creamos el repositorio remoto en GitHub
--   Armamos el reporte o dashboard en el archivo **index.qmd**
-    -   renv::snapshot()
--   Conectamos el repositorio local y el remoto desde la terminal de R
--   Actualizamos los cambios (commit y push)
+- Creamos el form y la hoja de cálculo con acceso a cualquiera vía link
+- Creamos un proyecto de Quarto (website)
+  - inicializamos git
+  - inicializamos renv
+- Creamos el repositorio remoto en GitHub
+- Armamos el reporte o dashboard en el archivo **index.qmd**
+  - renv::snapshot()
+- Conectamos el repositorio local y el remoto desde la terminal de R
+- Actualizamos los cambios (commit y push)
 :::
 
-
-# Break (5 minutos)
-
+# Break (15 minutos)
 
 # Workflow de Github Actions
 
@@ -388,9 +401,9 @@ Vamos a usar las reacciones de zoom para preguntas de opción múltiple
 
 :::: {.column width="50%" style="font-size: 0.8em;"}
 ::: {style="display: flex; flex-direction: column; justify-content: center; height: 100%; font-size: 0.9em;"}
--   **build-deploy** es el identificador del **job**
--   **runs-on** indica el tipo de máquina (runner) donde se ejecutará el
-    **job**
+- **build-deploy** es el identificador del **job**
+- **runs-on** indica el tipo de máquina (runner) donde se ejecutará el
+  **job**
 :::
 ::::
 ::::::
@@ -403,12 +416,12 @@ Vamos a usar las reacciones de zoom para preguntas de opción múltiple
 :::
 
 ::: {.column width="50%" style="font-size: 0.8em;"}
--   **permissions** configura qué puede hacer el **job** sobre el
-    contenido del repositorio:
-    -   **write:** permiso de escritura (crear archivos, releases,
-        actualizar archivos)
-    -   **read:** permiso de lectura (no puede modificar el repositorio)
-    -   Se puede especificar de forma global o a nivel de cada **job**
+- **permissions** configura qué puede hacer el **job** sobre el
+  contenido del repositorio:
+  - **write:** permiso de escritura (crear archivos, releases,
+    actualizar archivos)
+  - **read:** permiso de lectura (no puede modificar el repositorio)
+  - Se puede especificar de forma global o a nivel de cada **job**
 :::
 :::::
 
@@ -445,8 +458,8 @@ comunidad
 :::
 
 ::: {.column width="40%"}
--   Se puede ejecutar código en la terminal (shell) de la maquina
-    virtual (para ubuntu, es bash)
+- Se puede ejecutar código en la terminal (shell) de la maquina virtual
+  (para ubuntu, es bash)
 :::
 :::::
 
@@ -458,8 +471,8 @@ comunidad
 :::
 
 ::: {.column width="40%"}
--   Se puede ejecutar código indicando una terminal particular, en este
-    caso la de R.
+- Se puede ejecutar código indicando una terminal particular, en este
+  caso la de R.
 :::
 :::::
 
@@ -476,8 +489,8 @@ Quarto.
 ::: {.column width="50%"}
 **with:**
 
--   Los argumentos que la acción necesita para funcionar.
--   **target:** gh-pages/netlify/connect
+- Los argumentos que la acción necesita para funcionar.
+- **target:** gh-pages/netlify/connect
 :::
 :::::
 
@@ -494,8 +507,8 @@ Quarto.
 ::: {.column width="50%"}
 **env:**
 
--   Variables de entorno.
--   GITHUB_TOKEN
+- Variables de entorno.
+- GITHUB_TOKEN
 :::
 :::::
 
@@ -510,9 +523,9 @@ ejecución de un workflow de GitHub Actions.
 :::
 
 ::: {.column width="60%"}
--   Identifica al workflow y le permite interactuar con GitHub
--   Solo existe mientras dura la ejecución
--   Tiene permisos controlables
+- Identifica al workflow y le permite interactuar con GitHub
+- Solo existe mientras dura la ejecución
+- Tiene permisos controlables
 :::
 :::::
 
@@ -524,8 +537,8 @@ ejecución de un workflow de GitHub Actions.
 :::
 
 ::: {.column width="50%\""}
--   **secrets** hace referencia a un espacio seguro donde GitHub guarda
-    valores sensibles (claves, tokens, constraseñas) encriptados.
+- **secrets** hace referencia a un espacio seguro donde GitHub guarda
+  valores sensibles (claves, tokens, constraseñas) encriptados.
 :::
 :::::
 
@@ -537,15 +550,13 @@ ejecución de un workflow de GitHub Actions.
 :::
 
 ::: {.column width="50%\""}
--   **GITHUB_TOKEN** es el nombre de uno de esos valores.
+- **GITHUB_TOKEN** es el nombre de uno de esos valores.
 :::
 :::::
 
-
-##
+## 
 
 ![](imagenes/gha-yml4.jpg)
-
 
 ## Tipos de eventos que disparan un workflow (Triggers)
 
@@ -558,52 +569,65 @@ ejecución de un workflow de GitHub Actions.
 ## Repaso de la práctica
 
 ::: incremental
--   Creamos un fork del repositorio censo-meriendas
--   Creamos el archivo .github/workflows/\_publish.yml
--   Creamos la rama "gh-pages" y revisamos el setup en settings/pages
--   Modificamos los triggers para:
-    -   Actualizar tras cada push
-    -   Actualizar periódicamente
--   Revisamos el log de un workflow
+- Creamos un fork del repositorio censo-meriendas
+- Creamos el archivo .github/workflows/\_publish.yml
+- Creamos la rama "gh-pages" y revisamos el setup en settings/pages
+- Modificamos los triggers para:
+  - Actualizar tras cada push
+  - Actualizar periódicamente
+- Revisamos el log de un workflow
 :::
 
 # Mini-evaluación 2
 
-## Mini-evaluación 2:
+## Mini-evaluación 2 - Pregunta 1
 
-### En qué parte del YAML se indica cuáles serán los disparadores del workflow?
+::: {.poll #mini2-trigger-manual results="hidden"}
 
-👍 jobs:
+Querés que una persona sin experiencia en programación pueda actualizar el tablero apretando un botón. ¿Qué disparador agregás?
 
-😮 steps:
+- [ ] `push`
+- [ ] `schedule`
+- [x] `workflow_dispatch`
+- [ ] `pull_request`
 
-👏 on:
+:::
 
-## Mini-evaluación 2:
+## Mini-evaluación 2 - Pregunta 2
 
-### ¿De qué manera se puede ejecutar código de R dentro de una GHA?
+::: {.poll #mini2-codigo-r results="hidden"}
+¿De qué manera se puede ejecutar código de R dentro de una GitHub Action?
 
-👍 Dentro de un R script (ejemplo.R) via terminal de la VM
+- [ ] Dentro de un R script (`ejemplo.R`) vía la terminal de la máquina virtual
+- [ ] Dentro de un R script (`ejemplo.R`) vía la terminal de R
+- [ ] Como un comando de R aislado vía `Rscript -e`
+- [x] Todas las opciones son correctas
+:::
 
-😮 Dentro de un R script (ejemplo.R) via terminal de R
+## Mini-evaluación 2 - Pregunta 3
 
-🎉 Como un comando R aislado via `Rscript -e` (install.packages())
+::: {.poll #mini2-paralelo results="hidden"}
+Querés que dos tareas se ejecuten en paralelo. ¿Qué tenés que hacer?
 
-👏 Todas las opciones son correctas
+- [ ] Ponerlas como dos *steps* dentro del mismo job
+- [x] Ponerlas en dos jobs distintos, sin `needs:` entre ellos
+- [ ] Ponerlas en dos jobs distintos y unirlas con `needs:`
+- [ ] Agregar `parallel: true` en cada step
+:::
 
 # Buenas prácticas
 
 ## Buenas prácticas
 
 ::: incremental
--   Separar el “build”, las pruebas (“test”) y el “deploy” en jobs
-    independientes.
--   Paralelizar jobs cuando sea posible.
--   Reutilizar acciones de terceros (third-party actions)
--   Instalar versiones específicas de las herramientas
--   Aplicar el principio de menor privilegio.
--   **Gestionar claves de API y contraseñas como variables de entorno
-    usando GitHub Secrets.**
+- Separar el “build”, las pruebas (“test”) y el “deploy” en jobs
+  independientes.
+- Paralelizar jobs cuando sea posible.
+- Reutilizar acciones de terceros (third-party actions)
+- Instalar versiones específicas de las herramientas
+- Aplicar el principio de menor privilegio.
+- **Gestionar claves de API y contraseñas como variables de entorno
+  usando GitHub Secrets.**
 :::
 
 ## Secretos del repositorio
@@ -614,11 +638,11 @@ ejecución de un workflow de GitHub Actions.
 :::
 
 ::: {.column width="50%\""}
--   Permiten acceder a credenciales o información sensible sin
-    escribirlo directamente en el código.
+- Permiten acceder a credenciales o información sensible sin escribirlo
+  directamente en el código.
 
--   Todo lo que almacenamos aquí queda cifrado y nunca se muestra en
-    texto plano.
+- Todo lo que almacenamos aquí queda cifrado y nunca se muestra en texto
+  plano.
 :::
 :::::
 
@@ -626,9 +650,9 @@ ejecución de un workflow de GitHub Actions.
 
 ![](imagenes/var_ent4.jpg)
 
--   Cada secreto tiene un **nombre** y un **valor oculto**.
+- Cada secreto tiene un **nombre** y un **valor oculto**.
 
--   Usamos el nombre para invocar el valor desde GitHub Actions.
+- Usamos el nombre para invocar el valor desde GitHub Actions.
 
 ## Secretos del repositorio
 
@@ -656,8 +680,8 @@ En **R**, las variables de entorno se leen con **Sys.getenv()**.
 # **¡Muchas gracias por compartir este taller con nosotras!**
 
 Por favor, dejanos una pequeña reseña aquí 👉
-[**http://tiny.cc/quarto-GHA**](http://tiny.cc/quarto-GHA)
+[**https://tinyurl.com/GHA-Latinr2026**](https://tinyurl.com/GHA-Latinr2026)
 
 # Preguntas?
 
-Contactanos! **jesica.formoso\@gmail.com**\| **mcnanton\@gmail.com**
+Contactanos! **jesica.formoso@gmail.com** | **mcnanton@gmail.com**

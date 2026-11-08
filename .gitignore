@@ -4,3 +4,5 @@ renv/library/
 .RData
 _site/
 /.quarto/
+
+**/*.quarto_ipynb
