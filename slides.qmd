@@ -12,7 +12,7 @@ revealjs-plugins:
   - live-questions
 live-questions:
   server: "https://live-questions.jesica-formoso.workers.dev"
-  session: latinr-2026-gha
+  session: latinr-2026-taller
 author:
   - name: Jesica Formoso
     email: jesica.formoso@gmail.com
