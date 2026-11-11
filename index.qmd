@@ -180,4 +180,5 @@ Estos materiales están publicados bajo la licencia [Creative Commons Attributio
 
 {{< fa brands creative-commons size=2x >}} {{< fa brands creative-commons-by size=2x >}}
 
-[![DOI](https://zenodo.org/badge/1449668529.svg)](https://doi.org/10.5281/zenodo.24131078)
+<a href="https://doi.org/10.5281/zenodo.24131078"><img src="https://zenodo.org/badge/1449668529.svg" alt="DOI"></a>
+
