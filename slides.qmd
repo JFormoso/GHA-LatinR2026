@@ -91,6 +91,17 @@ con orquestación via GH Actions
 - Ya usé GitHub Actions o GitHub Pages
 :::
 
+## ¿Cuánta experiencia tenés con Quarto o R Markdown?
+
+::: {.poll #exp-quarto}
+
+- Nunca los usé
+- Los conozco, pero casi no los uso
+- Hago documentos o reportes con código y gráficos (`.qmd` o `.Rmd`)
+- Armé sitios web, libros, presentaciones o dashboards
+- Ya publiqué alguno en línea (GitHub Pages, Quarto Pub, Netlify…)
+
+:::
 
 # CI/CD y GitHub Actions
 
