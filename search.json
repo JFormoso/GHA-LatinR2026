@@ -67,7 +67,7 @@
     "href": "slides.html#qué-vamos-a-ver-hoy",
     "title": "Automatiza la publicación de tus reportes",
     "section": "Qué vamos a ver hoy",
-    "text": "Qué vamos a ver hoy\nAgenda\n\nConceptos básicos para trabajar con GitHub Actions, GH Pages y Quarto\nRecorrer el proyecto con el que vamos a trabajar\nComponentes de un workflow: eventos, jobs, steps\nPublicar un tablero en GitHub Pages, actualizarlo con cada cambio y con una periodicidad\nDos mini-evaluaciones y dos breaks\n\n\n\n\n\n\n\nTip\n\n\nAl terminar, cada persona va a tener un tablero publicado en su cuenta de GitHub que se actualiza solo.\n\n\n\n\nMateriales: https://jformoso.github.io/GHA-LatinR2026/"
+    "text": "Qué vamos a ver hoy\nAgenda\n\nConceptos básicos para trabajar con GitHub Actions, GH Pages y Quarto\nRecorrer el proyecto con el que vamos a trabajar\nComponentes de un workflow: eventos, jobs, steps\nPublicar un tablero en GitHub Pages, actualizarlo con cada cambio y con una periodicidad\nDos mini-evaluaciones y dos breaks\nMateriales: https://jformoso.github.io/GHA-LatinR2026/"
   },
   {
     "objectID": "slides.html#qué-vamos-a-implementar",
@@ -95,7 +95,7 @@
     "href": "slides.html#cicd",
     "title": "Automatiza la publicación de tus reportes",
     "section": "¿CI/CD?",
-    "text": "¿CI/CD?\n\nLa integración continua (CI) consiste en integrar los cambios del código en un repositorio de código fuente compartido de forma automática y frecuente.La implementación o distribución continua (CD) es un proceso de dos partes que implica la integración, la prueba y la distribución de los cambios en el código.\n\n\nFuente: Red Hat"
+    "text": "¿CI/CD?\n\n\nPrácticas para que los cambios en el código lleguen a producción seguido, de forma automática y con menos errores.\n\nCI: integración continua (Continuous Integration)\n\nCada persona del equipo suma sus cambios al repositorio compartido seguido y cada cambio se prueba automáticamente (con cambios chicos y frecuentes, cuando algo se rompe sabés exactamente qué cambio lo rompió).\nCada push dispara un workflow que construye el proyecto (build) y corre chequeos (test).\n\nCD: deploy contínuo (Continuous Deployment)\n\nCada cambio que pasa las pruebas se publica solo, sin intervención humana."
   },
   {
     "objectID": "slides.html#ejemplos-no-tan-lejanos",
