@@ -71,10 +71,6 @@ CIIPME-CONICET
 - Publicar un tablero en GitHub Pages, actualizarlo con cada cambio y con una periodicidad
 - Dos mini-evaluaciones y dos breaks
 
-::: {.callout-tip}
-Al terminar, cada persona va a tener un tablero publicado en su cuenta de GitHub que se actualiza solo.
-:::
-
 - Materiales: [https://jformoso.github.io/GHA-LatinR2026/](https://jformoso.github.io/GHA-LatinR2026/)
 
 ## Qué vamos a implementar
@@ -125,15 +121,20 @@ publicación de productos
 
 ## ¿CI/CD?
 
-> La integración continua (CI) consiste en integrar los cambios del
-> código en un repositorio de código fuente compartido de forma
-> automática y frecuente.La implementación o distribución continua (CD)
-> es un proceso de dos partes que implica la integración, la prueba y la
-> distribución de los cambios en el código.
+<br>
 
-![](imagenes/cdcd_redhat.png){fig-align="center"}
+> Prácticas para que los cambios en el código lleguen a producción seguido, de forma automática y con menos errores.
 
-*Fuente: Red Hat*
+**CI: integración continua (Continuous Integration)**
+
+- Cada persona del equipo suma sus cambios al repositorio compartido seguido y cada cambio se prueba automáticamente (con cambios chicos y frecuentes, cuando algo se rompe sabés exactamente qué cambio lo rompió).
+- Cada push dispara un workflow que construye el proyecto (build) y corre chequeos (test). 
+
+**CD: deploy contínuo (Continuous Deployment)**
+
+- Cada cambio que pasa las pruebas se publica solo, sin intervención humana.
+
+
 
 ## Ejemplos no tan *lejanos*
 
