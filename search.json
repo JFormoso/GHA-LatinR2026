@@ -60,14 +60,14 @@
     "href": "slides.html#hola",
     "title": "Automatiza la publicación de tus reportes",
     "section": "¡Hola!👋",
-    "text": "¡Hola!👋\n\n\n\n\n\nMaría Cristina Nanton Ciencia de Datos en Gerencia de Información y Estadísticas en Salud (GCBA) AI Dev en TGHN  R-Ladies Buenos Aires💜 MetaDocencia🍎\n\n\n\n\n\n\nJesica Formoso Investigadora Adjunta, CIIPME-CONICET   Medición de Impacto en Metadocencia🍎 R-Ladies Buenos Aires 💜"
+    "text": "¡Hola!👋\n\n\n\n\n\nMaría Cristina Nanton Ciencia de Datos en Gerencia de Información y Estadísticas en Salud (GCBA) AI Dev en TGHN  RLadies+ Buenos Aires💜 MetaDocencia🍎\n\n\n\n\n\n\nJesica Formoso Investigadora Adjunta, CIIPME-CONICET   Medición de Impacto en Metadocencia🍎 RLadies+ Buenos Aires 💜"
   },
   {
     "objectID": "slides.html#qué-vamos-a-ver-hoy",
     "href": "slides.html#qué-vamos-a-ver-hoy",
     "title": "Automatiza la publicación de tus reportes",
     "section": "Qué vamos a ver hoy",
-    "text": "Qué vamos a ver hoy\nAgenda\n\nConceptos básicos para trabajar con GitHub Actions, GH Pages y Quarto\nPreparación de un entorno de trabajo para flujos automatizados\nCreación de un flujo automatizado de publicación en GH Pages basado en pushes a un repositorio\nAdaptación a ejecuciones periódicas\nMateriales: https://jformoso.github.io/GHA-LatinR2026/"
+    "text": "Qué vamos a ver hoy\nAgenda\n\nConceptos básicos para trabajar con GitHub Actions, GH Pages y Quarto\nRecorrer el proyecto con el que vamos a trabajar\nComponentes de un workflow: eventos, jobs, steps\nPublicar un tablero en GitHub Pages, actualizarlo con cada cambio y con una periodicidad\nDos mini-evaluaciones y dos breaks\n\n\n\n\n\n\n\nTip\n\n\nAl terminar, cada persona va a tener un tablero publicado en su cuenta de GitHub que se actualiza solo.\n\n\n\n\nMateriales: https://jformoso.github.io/GHA-LatinR2026/"
   },
   {
     "objectID": "slides.html#qué-vamos-a-implementar",
