@@ -29,4 +29,10 @@ Durante este taller, vas a aprender a:
 
 - Cómo programar un workflow para que se ejecute automáticamente en intervalos regulares.
 
-Encontrá más información en la [página del taller](jformoso.github.io/GHA-LatinR2026/).
+## Licencia
+
+© 2025 María Nanton y Jesica Formoso
+
+Estos materiales están publicados bajo la licencia [Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/), la cual implica que podés compartir y adaptar el material siempre que reconozcas la autoría de forma adecuada.
+
+Encontrá más información en la [página del taller](https://jformoso.github.io/GHA-LatinR2026/).
