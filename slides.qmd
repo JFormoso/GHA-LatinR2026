@@ -38,7 +38,7 @@ editor:
 
 <strong>María Cristina Nanton</strong><br> Ciencia de
 Datos en Gerencia de Información y Estadísticas en Salud (GCBA)<br> AI
-Dev en TGHN <br> R-Ladies Buenos Aires💜<br>
+Dev en TGHN <br> RLadies+ Buenos Aires💜<br>
 MetaDocencia🍎
 
 </p>
@@ -54,7 +54,7 @@ MetaDocencia🍎
 <strong>Jesica Formoso</strong><br> Investigadora Adjunta,<br>
 CIIPME-CONICET
 <img src="imagenes/conicet.jpg" alt="Logo CONICET" style="height:1.2em; vertical-align:middle; margin-left:0.3em;"/>
-<br> Medición de Impacto en Metadocencia🍎<br> R-Ladies Buenos Aires 💜
+<br> Medición de Impacto en Metadocencia🍎<br> RLadies+ Buenos Aires 💜
 
 </p>
 :::
@@ -66,13 +66,14 @@ CIIPME-CONICET
 ### Agenda
 
 - Conceptos básicos para trabajar con GitHub Actions, GH Pages y Quarto
+- Recorrer el proyecto con el que vamos a trabajar
+- Componentes de un workflow: eventos, jobs, steps
+- Publicar un tablero en GitHub Pages, actualizarlo con cada cambio y con una periodicidad
+- Dos mini-evaluaciones y dos breaks
 
-- Preparación de un entorno de trabajo para flujos automatizados
-
-- Creación de un flujo automatizado de publicación en GH Pages basado en
-  pushes a un repositorio
-
-- Adaptación a ejecuciones periódicas
+::: {.callout-tip}
+Al terminar, cada persona va a tener un tablero publicado en su cuenta de GitHub que se actualiza solo.
+:::
 
 - Materiales: [https://jformoso.github.io/GHA-LatinR2026/](https://jformoso.github.io/GHA-LatinR2026/)
 
