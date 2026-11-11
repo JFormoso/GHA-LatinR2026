@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/1449668529.svg)](https://doi.org/10.5281/zenodo.24131078)
+
 # Automatizar la publicación de reportes con Quarto y Github Actions
 
 📅 **Fecha:** Miércoles 11 de noviembre
