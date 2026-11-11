@@ -1,12 +1,16 @@
+abstract: "Materiales para el tutorial Automatizar la publicación de reportes con Quarto y Github Actions - LatinR2026"
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 authors:
-  - family-names: Jesica
-    given-names: Formoso
+  - family-names: Formoso
+    given-names: Jesica
     orcid: https://orcid.org/0000-0003-3062-4036
-  - family-names: María Cristina
-    given-names: Nanton
+  - family-names: Nanton
+    given-names: María Cristina
     orcid: https://orcid.org/0000-0003-0426-2879
 title: "Automatizar la publicación de reportes con Quarto y Github Actions"
 version: 0.1.0
 date-released: 2025-09-14
+doi: 10.5281/zenodo.24131079
+license:
+- mit
