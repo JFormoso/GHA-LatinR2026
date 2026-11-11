@@ -84,6 +84,13 @@
     "text": "¿Cuánta experiencia tenés con GitHub?\n\n\nNunca lo usé\nTengo cuenta, pero casi no la uso\nLo uso para guardar mis proyectos (commit, push, pull)\nColaboro con otras personas (ramas, pull requests, forks)\nYa usé GitHub Actions o GitHub Pages"
   },
   {
+    "objectID": "slides.html#cuánta-experiencia-tenés-con-quarto-o-r-markdown",
+    "href": "slides.html#cuánta-experiencia-tenés-con-quarto-o-r-markdown",
+    "title": "Automatiza la publicación de tus reportes",
+    "section": "¿Cuánta experiencia tenés con Quarto o R Markdown?",
+    "text": "¿Cuánta experiencia tenés con Quarto o R Markdown?\n\n\nNunca los usé\nLos conozco, pero casi no los uso\nHago documentos o reportes con código y gráficos (.qmd o .Rmd)\nArmé sitios web, libros, presentaciones o dashboards\nYa publiqué alguno en línea (GitHub Pages, Quarto Pub, Netlify…)"
+  },
+  {
     "objectID": "slides.html#github-y-github-actions",
     "href": "slides.html#github-y-github-actions",
     "title": "Automatiza la publicación de tus reportes",
